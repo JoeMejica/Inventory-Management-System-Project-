@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.effect.DropShadow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="/InventoryManagementSystem/mainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryManagementSystem.ToManageUserController">
+    <left>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.84798431396484" minWidth="10.0" prefWidth="153.84798431396484" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.02533721923828" minWidth="10.0" prefWidth="46.152015686035156" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#mainMenu" prefHeight="90.0" prefWidth="150.0" text="Main Menu" wrapText="true">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect></Button>
+                <Button fx:id="outgoingBtn" mnemonicParsing="false" onAction="#outgoingMenu" prefHeight="90.0" prefWidth="150.0" text="Outgoing" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="incomingBtn" mnemonicParsing="false" onAction="#incomingMenu" prefHeight="90.0" prefWidth="150.0" text="Incoming" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="manageBtn" mnemonicParsing="false" onAction="#manageMenu" prefHeight="90.0" prefWidth="150.0" text="Manage" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="settingsBtn" mnemonicParsing="false" onAction="#settingsMenu" prefHeight="90.0" prefWidth="150.0" text="Settings" GridPane.rowIndex="4">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="signOutIMS" mnemonicParsing="false" onAction="#signOut" prefHeight="40.0" prefWidth="150.0" text="Sign-Out" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@home-2.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@edit.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@incoming-mail-interface-symbol.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@delivery.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@settings.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@log-out.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </GridPane>
+    </left>
+    <center>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="129.0" minHeight="7.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="229.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="137.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Confirm Admin Privileges" GridPane.halignment="CENTER">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font></Label>
+                <TextField fx:id="txtUserName" maxWidth="-Infinity" prefWidth="150.0" promptText="Username" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="40.0" />
+                    </GridPane.margin>
+                </TextField>
+                <PasswordField fx:id="loginPassword" maxWidth="-Infinity" prefWidth="150.0" promptText="Password" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                    <GridPane.margin>
+                        <Insets bottom="80.0" />
+                    </GridPane.margin>
+                </PasswordField>
+                <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#Login" prefHeight="60.0" prefWidth="150.0" text="Confirm" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+                <Label fx:id="lblStatus" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                    <GridPane.margin>
+                        <Insets bottom="50.0" />
+                    </GridPane.margin>
+                </Label>
+            </children>
+        </GridPane>
+    </center>
+    <right>
+        <ImageView fitHeight="76.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@Apple%20JACKS%20Logo.png" />
+            </image>
+            <BorderPane.margin>
+                <Insets right="10.0" top="580.0" />
+            </BorderPane.margin>
+        </ImageView>
+    </right>
+</BorderPane>

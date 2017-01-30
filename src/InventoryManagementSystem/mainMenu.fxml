@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="/InventoryManagementSystem/mainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryManagementSystem.mainMenuController">
+    <left>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.84798431396484" minWidth="10.0" prefWidth="153.84798431396484" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.02533721923828" minWidth="10.0" prefWidth="46.152015686035156" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#mainMenu" prefHeight="90.0" prefWidth="150.0" text="Main Menu" wrapText="true">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect></Button>
+                <Button fx:id="outgoingBtn" mnemonicParsing="false" onAction="#outgoingMenu" prefHeight="90.0" prefWidth="150.0" text="Outgoing" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="incomingBtn" mnemonicParsing="false" onAction="#incomingMenu" prefHeight="90.0" prefWidth="150.0" text="Incoming" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="manageBtn" mnemonicParsing="false" onAction="#manageMenu" prefHeight="90.0" prefWidth="150.0" text="Manage" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="settingsBtn" mnemonicParsing="false" onAction="#settingsMenu" prefHeight="90.0" prefWidth="150.0" text="Settings" GridPane.rowIndex="4">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <Button fx:id="signOutIMS" mnemonicParsing="false" onAction="#signOut" prefHeight="40.0" prefWidth="150.0" text="Sign-Out" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding></Button>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@home-2.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@edit.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@incoming-mail-interface-symbol.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@delivery.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@settings.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@log-out.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </GridPane>
+    </left>
+    <center>
+        <GridPane prefHeight="292.0" prefWidth="461.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="643.0" minWidth="10.0" prefWidth="465.04095458984375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="0.0" prefWidth="177.95904541015625" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Total Inventory Count" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Label>
+                <Label text="Total Incoming Inventory" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Label>
+                <Label text="Total Outgoing Inventory" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Label>
+                <Label text="Total Pending Inventory" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="totalInventoryLbl" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="40.0" />
+                    </font></Label>
+                <Label fx:id="totalIncomingInventoryLbl" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="40.0" />
+                    </font></Label>
+                <Label fx:id="totalOutgoingInventoryLbl" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="40.0" />
+                    </font></Label>
+                <Label fx:id="totalPendingInventoryLbl" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="40.0" />
+                    </font></Label>
+                <Label text="Main Menu" underline="true">
+                    <font>
+                        <Font name="Arial" size="40.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Label>
+            <Label text="Total Item Inventory" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="35.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="totalItemsLbl" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@help2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Includes Incoming, Outgoing and Unreserved items in the Warehouse" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets right="75.0" />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@help2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Includes Unreserved Items in the Warehouse" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets right="75.0" />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@help2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Includes Incoming, items arrived to be stored in the Warehouse" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets right="75.0" />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@help2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Includes Outgoing, items reserved to ship out of the Warehouse" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets right="75.0" />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@help2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Includes items in the Warehouse without barcodes" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets right="75.0" />
+               </GridPane.margin>
+            </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets left="10.0" />
+            </BorderPane.margin>
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+        </GridPane>
+    </center>
+    <right>
+        <ImageView fitHeight="76.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@Apple%20JACKS%20Logo.png" />
+            </image>
+            <BorderPane.margin>
+                <Insets right="10.0" top="580.0" />
+            </BorderPane.margin>
+        </ImageView>
+    </right>
+</BorderPane>

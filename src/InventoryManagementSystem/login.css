@@ -1,0 +1,26 @@
+.root{
+    -fx-background-image: url("loginbg.png");
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+
+}
+
+.text-input{
+	-fx-text-fill: #0072BB;
+	-fx-background-color:#F3F4F5;
+}
+
+
+.label {
+	-fx-text-alignment: center;
+
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #FFD034;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+	-fx-text-alignment: center;
+
+}
